@@ -4,7 +4,7 @@ const app = express();
 app.use(express.json());
 
 const VERIFY_TOKEN = process.env.VERIFY_TOKEN || 'mytoken';
-const IG_TOKEN = process.env.INSTAGRAM_TOKEN;
+const IG_TOKEN = process.env.INSTAGRAM_TOKEN || 'IGAAM9K9SCQxZABZAFl6UDhVMDRKRUNKWVkyWlJFeEt1d3ZAQczZAkZAmpaOGhfaDhNSnY1R3J3NjktVklMUEZAuQnRVaHQzc1pRZAkh6ai0tcWlmb3U2eXNnNlNqRXB6dGJnN0NWSmI1LWtBSFNuUHpNUWhMNmhHUmhaVXlyR2ptX201ZAwZDZD';
 const TRIGGER_WORD = (process.env.TRIGGER_WORD || 'INFO').toLowerCase();
 const REPLY_MSG = process.env.REPLY_MESSAGE || 'Hey! Here are the details you asked for!';
 
